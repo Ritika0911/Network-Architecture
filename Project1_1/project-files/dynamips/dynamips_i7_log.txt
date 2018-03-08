@@ -1,0 +1,35 @@
+May 08 23:30:55.874 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 08 23:30:55.875 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56194.
+May 08 23:30:56.033 HYPERVISOR: exec_cmd: hypervisor version 
+May 08 23:30:56.040 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ritika\GNS3\projects\Project1\project-files\dynamips 
+May 08 23:30:56.177 GENERAL: working_dir=C:\Users\Ritika\GNS3\projects\Project1\project-files\dynamips
+May 08 23:30:56.180 HYPERVISOR: exec_cmd: vm create R1 1 c2691 
+May 08 23:30:56.182 VM: VM R1 created.
+May 08 23:30:56.185 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+May 08 23:30:56.189 HYPERVISOR: exec_cmd: c2691 get_mac_addr R1 
+May 08 23:30:56.194 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+May 08 23:30:56.199 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Ritika/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25c.image 
+May 08 23:30:56.205 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+May 08 23:30:56.210 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 08 23:30:56.217 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 08 23:30:56.230 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+May 08 23:31:43.201 HYPERVISOR: exec_cmd: nio create_udp udp-d07279d9-bc6f-4363-a47e-44cfa2dd2d32 10000 127.0.0.1 10001 
+May 08 23:31:43.221 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-d07279d9-bc6f-4363-a47e-44cfa2dd2d32 
+May 08 23:31:43.234 HYPERVISOR: exec_cmd: vm get_status R1 
+May 08 23:32:34.602 HYPERVISOR: exec_cmd: vm rename R1 Kat 
+May 08 23:33:05.061 HYPERVISOR: exec_cmd: vm set_ghost_status Kat 2 
+May 08 23:33:05.075 HYPERVISOR: exec_cmd: vm set_ghost_file Kat c2691-adventerprisek9-mz.124-25c.image-192.ghost 
+May 08 23:33:05.082 HYPERVISOR: exec_cmd: vm get_status Kat 
+May 08 23:33:05.089 HYPERVISOR: exec_cmd: vm start Kat 
+May 08 23:50:33.485 HYPERVISOR: exec_cmd: vm extract_config Kat 
+May 08 23:50:39.969 HYPERVISOR: exec_cmd: vm get_status Kat 
+May 08 23:50:39.994 HYPERVISOR: exec_cmd: vm stop Kat 
+May 08 23:50:40.116 VM: VM Kat shutdown.
+May 08 23:50:40.137 HYPERVISOR: exec_cmd: vm extract_config Kat 
+May 08 23:50:41.945 HYPERVISOR: exec_cmd: vm get_status Kat 
+May 08 23:50:41.973 HYPERVISOR: exec_cmd: vm extract_config Kat 
+May 08 23:50:42.033 HYPERVISOR: exec_cmd: vm delete Kat 
+May 08 23:50:42.033 VM: VM Kat destroyed.
+May 08 23:50:42.089 HYPERVISOR: exec_cmd: hypervisor stop 
+May 08 23:50:42.332 HYPERVISOR: Stopped.
+May 08 23:50:42.332 GENERAL: reset done.

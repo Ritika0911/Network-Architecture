@@ -1,0 +1,44 @@
+May 08 16:08:22.076 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 08 16:08:22.077 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 62798.
+May 08 16:08:22.395 HYPERVISOR: exec_cmd: hypervisor version 
+May 08 16:08:22.413 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ritika\GNS3\projects\Project1_2\project-files\dynamips 
+May 08 16:08:22.981 GENERAL: working_dir=C:\Users\Ritika\GNS3\projects\Project1_2\project-files\dynamips
+May 08 16:08:23.027 HYPERVISOR: exec_cmd: vm create R3 3 c2691 
+May 08 16:08:23.028 VM: VM R3 created.
+May 08 16:08:23.042 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+May 08 16:08:23.054 HYPERVISOR: exec_cmd: c2691 get_mac_addr R3 
+May 08 16:08:23.070 HYPERVISOR: exec_cmd: vm set_ram R3 192 
+May 08 16:08:23.098 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Ritika/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25c.image 
+May 08 16:08:23.125 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+May 08 16:08:23.169 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+May 08 16:08:23.187 HYPERVISOR: exec_cmd: c2691 set_mac_addr R3 c003.2458.0000 
+May 08 16:08:23.203 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+May 08 16:08:23.218 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+May 08 16:08:23.495 HYPERVISOR: exec_cmd: nio create_udp udp-37c7494d-72b1-4595-8226-826403b929b0 10003 127.0.0.1 10002 
+May 08 16:08:23.523 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-37c7494d-72b1-4595-8226-826403b929b0 
+May 08 16:08:23.543 HYPERVISOR: exec_cmd: vm get_status R3 
+May 08 16:08:23.741 HYPERVISOR: exec_cmd: nio create_udp udp-cac540d7-a673-4106-a84f-07a88d00bec3 10004 127.0.0.1 10005 
+May 08 16:08:23.763 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-cac540d7-a673-4106-a84f-07a88d00bec3 
+May 08 16:08:23.787 HYPERVISOR: exec_cmd: vm get_status R3 
+May 08 16:08:26.832 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+May 08 16:08:26.849 HYPERVISOR: exec_cmd: vm set_ghost_file R3 c2691-adventerprisek9-mz.124-25c.image-192.ghost 
+May 08 16:08:26.864 HYPERVISOR: exec_cmd: vm get_status R3 
+May 08 16:08:26.880 HYPERVISOR: exec_cmd: vm start R3 
+May 08 16:09:52.046 HYPERVISOR: exec_cmd: vm get_status R3 
+May 08 16:09:52.074 HYPERVISOR: exec_cmd: vm stop R3 
+May 08 16:09:52.258 VM: VM R3 shutdown.
+May 08 16:09:52.362 HYPERVISOR: exec_cmd: vm extract_config R3 
+May 08 16:10:18.297 HYPERVISOR: exec_cmd: vm rename R3 Router2 
+May 08 16:11:41.705 HYPERVISOR: exec_cmd: vm get_status Router2 
+May 08 16:11:41.732 HYPERVISOR: exec_cmd: vm start Router2 
+May 08 16:16:33.110 HYPERVISOR: exec_cmd: vm get_status Router2 
+May 08 16:16:33.125 HYPERVISOR: exec_cmd: vm stop Router2 
+May 08 16:16:33.326 VM: VM Router2 shutdown.
+May 08 16:16:33.349 HYPERVISOR: exec_cmd: vm extract_config Router2 
+May 08 16:16:50.315 HYPERVISOR: exec_cmd: vm get_status Router2 
+May 08 16:16:50.339 HYPERVISOR: exec_cmd: vm extract_config Router2 
+May 08 16:16:50.383 HYPERVISOR: exec_cmd: vm delete Router2 
+May 08 16:16:50.383 VM: VM Router2 destroyed.
+May 08 16:16:50.412 HYPERVISOR: exec_cmd: hypervisor stop 
+May 08 16:16:50.657 HYPERVISOR: Stopped.
+May 08 16:16:50.657 GENERAL: reset done.

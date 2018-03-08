@@ -1,0 +1,53 @@
+May 08 13:13:07.523 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 08 13:13:07.524 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 59070.
+May 08 13:13:08.034 HYPERVISOR: exec_cmd: hypervisor version 
+May 08 13:13:08.040 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ritika\GNS3\projects\Project1_3\project-files\dynamips 
+May 08 13:13:08.040 GENERAL: working_dir=C:\Users\Ritika\GNS3\projects\Project1_3\project-files\dynamips
+May 08 13:13:08.045 HYPERVISOR: exec_cmd: vm create R3 3 c2691 
+May 08 13:13:08.047 VM: VM R3 created.
+May 08 13:13:08.051 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+May 08 13:13:08.056 HYPERVISOR: exec_cmd: c2691 get_mac_addr R3 
+May 08 13:13:08.061 HYPERVISOR: exec_cmd: vm set_ram R3 192 
+May 08 13:13:08.066 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Ritika/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25c.image 
+May 08 13:13:08.071 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+May 08 13:13:08.076 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+May 08 13:13:08.083 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+May 08 13:13:08.095 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+May 08 13:13:43.112 HYPERVISOR: exec_cmd: nio create_udp udp-77eef295-f521-469c-952b-0dd7927baab2 10003 127.0.0.1 10002 
+May 08 13:13:43.124 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-77eef295-f521-469c-952b-0dd7927baab2 
+May 08 13:13:43.137 HYPERVISOR: exec_cmd: vm get_status R3 
+May 08 13:13:45.629 HYPERVISOR: exec_cmd: vm create Ghost 0 c2691 
+May 08 13:13:45.631 VM: VM Ghost created.
+May 08 13:13:45.641 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Ritika/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25c.image 
+May 08 13:13:45.647 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 08 13:13:45.653 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c2691-adventerprisek9-mz.124-25c.image-192.ghost 
+May 08 13:13:45.659 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+May 08 13:13:45.666 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 08 13:13:45.673 HYPERVISOR: exec_cmd: vm start Ghost 
+May 08 13:13:46.162 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 08 13:13:46.169 HYPERVISOR: exec_cmd: vm stop Ghost 
+May 08 13:13:46.375 VM: VM Ghost shutdown.
+May 08 13:13:46.427 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 08 13:13:46.444 VM: VM Ghost destroyed.
+May 08 13:13:46.531 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+May 08 13:13:46.535 HYPERVISOR: exec_cmd: vm set_ghost_file R3 c2691-adventerprisek9-mz.124-25c.image-192.ghost 
+May 08 13:13:46.541 HYPERVISOR: exec_cmd: vm get_status R3 
+May 08 13:13:46.549 HYPERVISOR: exec_cmd: vm start R3 
+May 08 13:52:13.502 HYPERVISOR: exec_cmd: vm get_status R3 
+May 08 13:52:13.511 HYPERVISOR: exec_cmd: vm stop R3 
+May 08 13:52:13.648 VM: VM R3 shutdown.
+May 08 13:52:13.655 HYPERVISOR: exec_cmd: vm extract_config R3 
+May 08 13:52:13.730 HYPERVISOR: exec_cmd: vm get_status R3 
+May 08 13:52:13.740 HYPERVISOR: exec_cmd: vm start R3 
+May 08 13:52:44.930 HYPERVISOR: exec_cmd: vm get_status R3 
+May 08 13:52:44.957 HYPERVISOR: exec_cmd: vm stop R3 
+May 08 13:52:45.044 VM: VM R3 shutdown.
+May 08 13:52:45.050 HYPERVISOR: exec_cmd: vm extract_config R3 
+May 08 13:52:50.246 HYPERVISOR: exec_cmd: vm extract_config R3 
+May 08 13:53:02.374 HYPERVISOR: exec_cmd: vm get_status R3 
+May 08 13:53:02.392 HYPERVISOR: exec_cmd: vm extract_config R3 
+May 08 13:53:02.433 HYPERVISOR: exec_cmd: vm delete R3 
+May 08 13:53:02.433 VM: VM R3 destroyed.
+May 08 13:53:02.741 HYPERVISOR: exec_cmd: hypervisor stop 
+May 08 13:53:02.863 HYPERVISOR: Stopped.
+May 08 13:53:02.863 GENERAL: reset done.

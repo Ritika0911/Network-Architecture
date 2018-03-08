@@ -1,0 +1,38 @@
+May 08 23:40:31.914 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 08 23:40:31.915 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56267.
+May 08 23:40:32.266 HYPERVISOR: exec_cmd: hypervisor version 
+May 08 23:40:32.270 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ritika\GNS3\projects\Project1\project-files\dynamips 
+May 08 23:40:32.270 GENERAL: working_dir=C:\Users\Ritika\GNS3\projects\Project1\project-files\dynamips
+May 08 23:40:32.278 HYPERVISOR: exec_cmd: vm create R1 5 c2691 
+May 08 23:40:32.280 VM: VM R1 created.
+May 08 23:40:32.288 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5002 
+May 08 23:40:32.296 HYPERVISOR: exec_cmd: c2691 get_mac_addr R1 
+May 08 23:40:32.303 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+May 08 23:40:32.313 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Ritika/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25c.image 
+May 08 23:40:32.320 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+May 08 23:40:32.328 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 08 23:40:32.335 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 08 23:40:32.350 HYPERVISOR: exec_cmd: vm set_config R1 configs/i5_startup-config.cfg 
+May 08 23:40:45.325 HYPERVISOR: exec_cmd: nio create_udp udp-16df0248-7ab9-4cfc-8f21-3485ba84ace0 10008 127.0.0.1 10009 
+May 08 23:40:45.364 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-16df0248-7ab9-4cfc-8f21-3485ba84ace0 
+May 08 23:40:45.376 HYPERVISOR: exec_cmd: vm get_status R1 
+May 08 23:40:49.873 HYPERVISOR: exec_cmd: nio create_udp udp-95134417-d794-4c82-9a07-e46dd7c53c48 10010 127.0.0.1 10011 
+May 08 23:40:49.908 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-95134417-d794-4c82-9a07-e46dd7c53c48 
+May 08 23:40:49.920 HYPERVISOR: exec_cmd: vm get_status R1 
+May 08 23:41:08.264 HYPERVISOR: exec_cmd: vm rename R1 Reid2 
+May 08 23:41:10.623 HYPERVISOR: exec_cmd: vm set_ghost_status Reid2 2 
+May 08 23:41:10.659 HYPERVISOR: exec_cmd: vm set_ghost_file Reid2 c2691-adventerprisek9-mz.124-25c.image-192.ghost 
+May 08 23:41:10.666 HYPERVISOR: exec_cmd: vm get_status Reid2 
+May 08 23:41:10.674 HYPERVISOR: exec_cmd: vm start Reid2 
+May 08 23:50:33.697 HYPERVISOR: exec_cmd: vm extract_config Reid2 
+May 08 23:50:39.924 HYPERVISOR: exec_cmd: vm get_status Reid2 
+May 08 23:50:39.965 HYPERVISOR: exec_cmd: vm stop Reid2 
+May 08 23:50:40.118 VM: VM Reid2 shutdown.
+May 08 23:50:40.141 HYPERVISOR: exec_cmd: vm extract_config Reid2 
+May 08 23:50:41.940 HYPERVISOR: exec_cmd: vm get_status Reid2 
+May 08 23:50:41.968 HYPERVISOR: exec_cmd: vm extract_config Reid2 
+May 08 23:50:42.017 HYPERVISOR: exec_cmd: vm delete Reid2 
+May 08 23:50:42.017 VM: VM Reid2 destroyed.
+May 08 23:50:42.050 HYPERVISOR: exec_cmd: hypervisor stop 
+May 08 23:50:42.326 HYPERVISOR: Stopped.
+May 08 23:50:42.326 GENERAL: reset done.

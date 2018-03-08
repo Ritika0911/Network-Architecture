@@ -1,0 +1,24 @@
+May 08 23:31:10.950 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 08 23:31:10.951 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 56206.
+May 08 23:31:11.441 HYPERVISOR: exec_cmd: hypervisor version 
+May 08 23:31:11.447 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ritika\GNS3\projects\Project1\project-files\dynamips 
+May 08 23:31:11.447 GENERAL: working_dir=C:\Users\Ritika\GNS3\projects\Project1\project-files\dynamips
+May 08 23:31:11.456 HYPERVISOR: exec_cmd: ethsw create SW2 
+May 08 23:31:59.054 HYPERVISOR: exec_cmd: nio create_udp udp-e0a3db8d-2f07-448a-9911-7f78c615638c 10005 127.0.0.1 10004 
+May 08 23:31:59.067 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-e0a3db8d-2f07-448a-9911-7f78c615638c 
+May 08 23:31:59.093 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-e0a3db8d-2f07-448a-9911-7f78c615638c 1 
+May 08 23:32:03.017 HYPERVISOR: exec_cmd: nio create_udp udp-79a63368-3abe-4a1b-9568-1fd8eb98b2ec 10007 127.0.0.1 10006 
+May 08 23:32:03.030 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-79a63368-3abe-4a1b-9568-1fd8eb98b2ec 
+May 08 23:32:03.058 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-79a63368-3abe-4a1b-9568-1fd8eb98b2ec 1 
+May 08 23:32:11.148 HYPERVISOR: exec_cmd: nio create_udp udp-8fbfabb5-b0d8-4d7b-ad21-52c1f3ad534c 10008 127.0.0.1 10009 
+May 08 23:32:11.166 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-8fbfabb5-b0d8-4d7b-ad21-52c1f3ad534c 
+May 08 23:32:11.193 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-8fbfabb5-b0d8-4d7b-ad21-52c1f3ad534c 1 
+May 08 23:40:25.505 HYPERVISOR: exec_cmd: ethsw remove_nio SW2 udp-8fbfabb5-b0d8-4d7b-ad21-52c1f3ad534c 
+May 08 23:40:25.588 HYPERVISOR: exec_cmd: nio delete udp-8fbfabb5-b0d8-4d7b-ad21-52c1f3ad534c 
+May 08 23:40:49.896 HYPERVISOR: exec_cmd: nio create_udp udp-ecbe3990-5e81-4932-b924-99331d6be786 10011 127.0.0.1 10010 
+May 08 23:40:49.912 HYPERVISOR: exec_cmd: ethsw add_nio SW2 udp-ecbe3990-5e81-4932-b924-99331d6be786 
+May 08 23:40:49.948 HYPERVISOR: exec_cmd: ethsw set_access_port SW2 udp-ecbe3990-5e81-4932-b924-99331d6be786 1 
+May 08 23:50:41.500 HYPERVISOR: exec_cmd: ethsw delete SW2 
+May 08 23:50:41.599 HYPERVISOR: exec_cmd: hypervisor stop 
+May 08 23:50:41.826 HYPERVISOR: Stopped.
+May 08 23:50:41.826 GENERAL: reset done.

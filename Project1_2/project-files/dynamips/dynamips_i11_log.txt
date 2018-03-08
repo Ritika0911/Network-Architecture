@@ -1,0 +1,37 @@
+May 05 18:08:12.623 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 05 18:08:12.624 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52680.
+May 05 18:08:12.683 HYPERVISOR: exec_cmd: hypervisor version 
+May 05 18:08:12.692 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ritika\GNS3\projects\Project1_2\project-files\dynamips 
+May 05 18:08:12.909 GENERAL: working_dir=C:\Users\Ritika\GNS3\projects\Project1_2\project-files\dynamips
+May 05 18:08:12.920 HYPERVISOR: exec_cmd: vm create R2 2 c2691 
+May 05 18:08:12.925 VM: VM R2 created.
+May 05 18:08:12.965 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+May 05 18:08:12.994 HYPERVISOR: exec_cmd: c2691 get_mac_addr R2 
+May 05 18:08:13.017 HYPERVISOR: exec_cmd: vm set_ram R2 192 
+May 05 18:08:13.040 HYPERVISOR: exec_cmd: vm set_ios R2 C:/Users/Ritika/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25c.image 
+May 05 18:08:13.065 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+May 05 18:08:13.088 HYPERVISOR: exec_cmd: vm set_exec_area R2 64 
+May 05 18:08:13.111 HYPERVISOR: exec_cmd: c2691 set_mac_addr R2 c002.3f18.0000 
+May 05 18:08:13.124 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+May 05 18:08:13.137 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+May 05 18:08:13.254 HYPERVISOR: exec_cmd: nio create_udp udp-45642c7b-9389-414a-9c3e-c7d241693353 10001 127.0.0.1 10000 
+May 05 18:08:13.274 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-45642c7b-9389-414a-9c3e-c7d241693353 
+May 05 18:08:13.294 HYPERVISOR: exec_cmd: vm get_status R2 
+May 05 18:08:13.329 HYPERVISOR: exec_cmd: nio create_udp udp-a6940016-4a54-46c9-967e-56c44c6601fd 10002 127.0.0.1 10003 
+May 05 18:08:13.348 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-a6940016-4a54-46c9-967e-56c44c6601fd 
+May 05 18:08:13.358 HYPERVISOR: exec_cmd: vm get_status R2 
+May 05 18:08:16.314 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+May 05 18:08:16.324 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c2691-adventerprisek9-mz.124-25c.image-192.ghost 
+May 05 18:08:16.330 HYPERVISOR: exec_cmd: vm get_status R2 
+May 05 18:08:16.338 HYPERVISOR: exec_cmd: vm start R2 
+May 05 18:37:12.419 HYPERVISOR: exec_cmd: vm get_status R2 
+May 05 18:37:12.460 HYPERVISOR: exec_cmd: vm stop R2 
+May 05 18:37:12.678 VM: VM R2 shutdown.
+May 05 18:37:12.761 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 05 18:37:15.774 HYPERVISOR: exec_cmd: vm get_status R2 
+May 05 18:37:15.796 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 05 18:37:15.845 HYPERVISOR: exec_cmd: vm delete R2 
+May 05 18:37:15.845 VM: VM R2 destroyed.
+May 05 18:37:15.879 HYPERVISOR: exec_cmd: hypervisor stop 
+May 05 18:37:16.230 HYPERVISOR: Stopped.
+May 05 18:37:16.230 GENERAL: reset done.

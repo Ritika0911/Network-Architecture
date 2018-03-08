@@ -1,0 +1,37 @@
+May 08 16:17:02.785 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 08 16:17:02.786 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63007.
+May 08 16:17:03.296 HYPERVISOR: exec_cmd: hypervisor version 
+May 08 16:17:03.302 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ritika\GNS3\projects\Project1_2\project-files\dynamips 
+May 08 16:17:03.302 GENERAL: working_dir=C:\Users\Ritika\GNS3\projects\Project1_2\project-files\dynamips
+May 08 16:17:03.309 HYPERVISOR: exec_cmd: vm create R3 3 c2691 
+May 08 16:17:03.311 VM: VM R3 created.
+May 08 16:17:03.316 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5002 
+May 08 16:17:03.321 HYPERVISOR: exec_cmd: c2691 get_mac_addr R3 
+May 08 16:17:03.327 HYPERVISOR: exec_cmd: vm set_ram R3 192 
+May 08 16:17:03.332 HYPERVISOR: exec_cmd: vm set_ios R3 C:/Users/Ritika/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25c.image 
+May 08 16:17:03.338 HYPERVISOR: exec_cmd: vm set_exec_area R3 64 
+May 08 16:17:03.346 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+May 08 16:17:03.352 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+May 08 16:17:03.360 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+May 08 16:17:38.518 HYPERVISOR: exec_cmd: vm rename R3 Router2 
+May 08 16:18:45.011 HYPERVISOR: exec_cmd: nio create_udp udp-de8f8153-7dd4-4f5c-9c5c-73ac1bdf4d87 10003 127.0.0.1 10002 
+May 08 16:18:45.023 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 0 1 udp-de8f8153-7dd4-4f5c-9c5c-73ac1bdf4d87 
+May 08 16:18:45.036 HYPERVISOR: exec_cmd: vm get_status Router2 
+May 08 16:18:48.414 HYPERVISOR: exec_cmd: nio create_udp udp-202328d4-4c67-4f54-a6fe-fba99da88662 10004 127.0.0.1 10005 
+May 08 16:18:48.428 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Router2 0 0 udp-202328d4-4c67-4f54-a6fe-fba99da88662 
+May 08 16:18:48.437 HYPERVISOR: exec_cmd: vm get_status Router2 
+May 08 16:18:58.977 HYPERVISOR: exec_cmd: vm set_ghost_status Router2 2 
+May 08 16:18:58.988 HYPERVISOR: exec_cmd: vm set_ghost_file Router2 c2691-adventerprisek9-mz.124-25c.image-192.ghost 
+May 08 16:18:58.997 HYPERVISOR: exec_cmd: vm get_status Router2 
+May 08 16:18:59.008 HYPERVISOR: exec_cmd: vm start Router2 
+May 08 16:53:37.525 HYPERVISOR: exec_cmd: vm get_status Router2 
+May 08 16:53:37.542 HYPERVISOR: exec_cmd: vm stop Router2 
+May 08 16:53:37.777 VM: VM Router2 shutdown.
+May 08 16:53:37.824 HYPERVISOR: exec_cmd: vm extract_config Router2 
+May 08 16:53:54.092 HYPERVISOR: exec_cmd: vm get_status Router2 
+May 08 16:53:54.115 HYPERVISOR: exec_cmd: vm extract_config Router2 
+May 08 16:53:54.175 HYPERVISOR: exec_cmd: vm delete Router2 
+May 08 16:53:54.175 VM: VM Router2 destroyed.
+May 08 16:53:54.211 HYPERVISOR: exec_cmd: hypervisor stop 
+May 08 16:53:54.328 HYPERVISOR: Stopped.
+May 08 16:53:54.328 GENERAL: reset done.

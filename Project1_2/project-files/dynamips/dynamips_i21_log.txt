@@ -1,0 +1,35 @@
+May 08 16:16:56.844 HYPERVISOR: Release 0.2.14-x86/Windows (tag 2014092320)
+May 08 16:16:56.845 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63002.
+May 08 16:16:57.208 HYPERVISOR: exec_cmd: hypervisor version 
+May 08 16:16:57.215 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Ritika\GNS3\projects\Project1_2\project-files\dynamips 
+May 08 16:16:57.329 GENERAL: working_dir=C:\Users\Ritika\GNS3\projects\Project1_2\project-files\dynamips
+May 08 16:16:57.332 HYPERVISOR: exec_cmd: vm create R1 1 c2691 
+May 08 16:16:57.334 VM: VM R1 created.
+May 08 16:16:57.338 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5000 
+May 08 16:16:57.345 HYPERVISOR: exec_cmd: c2691 get_mac_addr R1 
+May 08 16:16:57.351 HYPERVISOR: exec_cmd: vm set_ram R1 192 
+May 08 16:16:57.358 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/Ritika/GNS3/images/IOS/c2691-adventerprisek9-mz.124-25c.image 
+May 08 16:16:57.367 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+May 08 16:16:57.374 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+May 08 16:16:57.381 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+May 08 16:16:57.390 HYPERVISOR: exec_cmd: vm set_config R1 configs/i1_startup-config.cfg 
+May 08 16:17:16.922 HYPERVISOR: exec_cmd: vm rename R1 P1 
+May 08 16:18:40.314 HYPERVISOR: exec_cmd: nio create_udp udp-e33e53e1-0332-45c7-b6e7-0591997e0f33 10000 127.0.0.1 10001 
+May 08 16:18:40.331 HYPERVISOR: exec_cmd: vm slot_add_nio_binding P1 0 0 udp-e33e53e1-0332-45c7-b6e7-0591997e0f33 
+May 08 16:18:40.342 HYPERVISOR: exec_cmd: vm get_status P1 
+May 08 16:18:59.025 HYPERVISOR: exec_cmd: vm set_ghost_status P1 2 
+May 08 16:18:59.039 HYPERVISOR: exec_cmd: vm set_ghost_file P1 c2691-adventerprisek9-mz.124-25c.image-192.ghost 
+May 08 16:18:59.046 HYPERVISOR: exec_cmd: vm get_status P1 
+May 08 16:18:59.055 HYPERVISOR: exec_cmd: vm start P1 
+May 08 16:53:37.506 HYPERVISOR: exec_cmd: vm get_status P1 
+May 08 16:53:37.535 HYPERVISOR: exec_cmd: vm stop P1 
+May 08 16:53:37.737 VM: VM P1 shutdown.
+May 08 16:53:37.764 HYPERVISOR: exec_cmd: vm extract_config P1 
+May 08 16:53:54.063 HYPERVISOR: exec_cmd: vm extract_config P1 
+May 08 16:53:54.156 HYPERVISOR: exec_cmd: vm get_status P1 
+May 08 16:53:54.171 HYPERVISOR: exec_cmd: vm extract_config P1 
+May 08 16:53:54.208 HYPERVISOR: exec_cmd: vm delete P1 
+May 08 16:53:54.208 VM: VM P1 destroyed.
+May 08 16:53:54.287 HYPERVISOR: exec_cmd: hypervisor stop 
+May 08 16:53:54.328 HYPERVISOR: Stopped.
+May 08 16:53:54.328 GENERAL: reset done.
